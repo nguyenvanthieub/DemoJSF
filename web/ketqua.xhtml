@@ -6,15 +6,13 @@
         <title>Facelet Title</title>
     </h:head>
     <h:body>
-        Day la trang Index
+        Day la trang Ket Qua
         <br></br>
-        <h:link value="Click vao trang Hien Thi" outcome="hienthi"></h:link>
-        <br></br>
+        
         <h:form>
-            <h:commandLink value="Click vao trang Ket qua" action="#{helloManagedBean.ketqua()}"></h:commandLink>
+            Gia tri a: #{helloManagedBean.getA()}
             <br></br>
-            <h:commandButton value="Go page Hi" action="#{hiManagedBean.sayHi()}"></h:commandButton>
-            <br></br>
+            Gia tri ket qua: #{helloManagedBean.ketqua()}
         </h:form>
     </h:body>
 </html>

@@ -6,7 +6,16 @@
         <title>Facelet Title</title>
     </h:head>
     <h:body>
-        Hello from Facelets <h:link value="Click vao trang Hien Thi" outcome="hienthi"></h:link>
+        Day la trang Index
+        <br></br>
+        <h:link value="Click vao trang Hien Thi" outcome="hienthi"></h:link>
+        <br></br>
+        <h:form>
+            <h:commandLink value="Click vao trang Ket qua" action="#{helloManagedBean.ketqua()}"></h:commandLink>
+            <br></br>
+            <h:commandButton value="Go page Hi" action="#{hiManagedBean.sayHi()}"></h:commandButton>
+            <br></br>
+        </h:form>
     </h:body>
 </html>
 
